@@ -23,10 +23,8 @@ var pikePlaceMarket = {
     this.calcCustsEachHour();
     for(var i = 0; i < hours.length; i++){
       var oneHour = Math.floor(this.custsEachHour[i] * this.avgCookiesPerCust);
-      console.log(oneHour, 'one hour');
       this.cookiesEachHour.push(oneHour);
       this.totalDailySales += oneHour;
-      console.log(this.totalDailySales, 'total');
     }
   },
   render: function(){
@@ -60,16 +58,13 @@ var seatacAirport = {
     this.calcCustsEachHour();
     for(var i = 0; i < hours.length; i++){
       var oneHour = Math.floor(this.custsEachHour[i] * this.avgCookiesPerCust);
-      console.log(oneHour, 'one hour');
       this.cookiesEachHour.push(oneHour);
       this.totalDailySales += oneHour;
-      console.log(this.totalDailySales, 'total');
     }
   },
   render: function(){
     this.calcCookiesEachHour();
     var ulEl = document.getElementById('seatac');
-    console.log(ulEl, 'ulEl');
     for(var i = 0; i < hours.length; i++){
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
@@ -106,7 +101,6 @@ var seattleCenter = {
   render: function(){
     this.calcCookiesEachHour();
     var ulEl = document.getElementById('center');
-    console.log(ulEl, 'ulEl');
     for(var i = 0; i < hours.length; i++){
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
@@ -142,7 +136,6 @@ var capitolHill = {
   render: function(){
     this.calcCookiesEachHour();
     var ulEl = document.getElementById('Hill');
-    console.log(ulEl, 'ulEl');
     for(var i = 0; i < hours.length; i++){
       var liEl = document.createElement('li');
       liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
@@ -178,7 +171,6 @@ var alkiBeach = {
   render: function(){
     this.calcCookiesEachHour();
     var ulEl = document.getElementById('alki');
-    console.log(ulEl, 'ulEl');
     for(var i = 0; i < hours.length; i++){
     var liEl = document.createElement('li');
     liEl.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
