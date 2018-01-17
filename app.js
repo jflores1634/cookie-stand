@@ -1,13 +1,27 @@
 'use strict';
 
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+// var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+var cookiesByLocation = [];
+
+var cookieTable = document.getElementById('cookies');
+
+function patsCookies()
+
+
+
+
+
+
+
+
+
+var hourTable
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min; // via MDN docs
 }
 
 var pikePlaceMarket = {
-  name: '1st and Pike',
   minCustsPerHour: 23,
   maxCustsPerHour: 65,
   avgCookiesPerCust: 6.3,
@@ -42,7 +56,6 @@ var pikePlaceMarket = {
 }
 
 var seatacAirport = {
-  name: 'Seatac Airport',
   minCustsPerHour: 3,
   maxCustsPerHour: 24,
   avgCookiesPerCust: 1.2,
@@ -77,7 +90,6 @@ var seatacAirport = {
 }
 
 var seattleCenter = {
-  name: 'Seattle Center',
   minCustsPerHour: 11,
   maxCustsPerHour: 38,
   avgCookiesPerCust: 3.7,
@@ -113,7 +125,6 @@ var seattleCenter = {
 }
 
 var capitolHill = {
-  name: 'Capitol Hill',
   minCustsPerHour: 20,
   maxCustsPerHour: 38,
   avgCookiesPerCust: 2.3,
@@ -148,7 +159,6 @@ var capitolHill = {
 }
 
 var alkiBeach = {
-  name: 'Alki Beach',
   minCustsPerHour: 11,
   maxCustsPerHour: 38,
   avgCookiesPerCust: 3.7,

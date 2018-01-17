@@ -10,3 +10,7 @@
 -Good use of Object Literals (no constructors allowed today); one for each store model; properties/values and methods are correctly constructed and given meaningful names.
 -Main page meets requirements of the problem domain
 -Stores are correctly rendering as lists to the main page
+
+#Lab 7 User Stories
+-Implement a constructor function, eliminate duplicated code.
+-represent data in a table rather than a list.
