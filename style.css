@@ -9,3 +9,7 @@ h2 {
 li {
   color: purple;
 }
+
+table {
+  border: 2px;
+}
