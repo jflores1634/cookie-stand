@@ -11,6 +11,6 @@
 -Main page meets requirements of the problem domain
 -Stores are correctly rendering as lists to the main page
 
-# Lab 7 User Stories
+## Lab 7 User Stories
 -Implement a constructor function, eliminate duplicated code.
 -represent data in a table rather than a list.
