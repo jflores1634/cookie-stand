@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Public Facing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <img src="img\salmon.png" alt="salmon" title="pats salmon cookies" />
+</head>
+
+<body>
+  <h1>Pat's Salmon Cookies</h1>
+  <table id="cookies"></table>
+  <form id="store-form">
+    <fieldset>
+      <legend>Add a new store.</legend>
+      <label for="storeName">Name:</label>
+      <input name="storeName" type="text">
+      <!--"text" for letters or numbers, "numbers" for numbers only  -->
+      <!-- will need to parseInt in JS for text-->
+      <input name="minCook" type="text">
+      <label for="minCook">Name:</label>
+      <!--input is self closing -->
+      <label for="maxCook">Name:</label>
+      <input name="maxCook" type="text">
+
+      <label for="avgCook">Name:</label>
+      <input name="avgCook" type="text">
+      <button id="add-store">Add a Store</button>
+    </fieldset>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
