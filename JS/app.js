@@ -45,24 +45,6 @@ render: function(){
 };
 
 
-//   var tdEl = document.createElement('td');
-//   tdEl.textContent = this.name;
-//   trEl.appendChild(tdEl);
-//
-//   tdEl = document.createElement('td');
-//   tdEl.textContent = this.min;
-//   trEl.appendChild(tdEl);
-//
-//   tdEl = document.createElement('td');
-//   tdEl.textContent = this.max;
-//   trEl.appendChild(tdEl);
-//
-//   tdEl = document.createElement('td');
-//   tdEl.textContent = this.avg;
-//   trEl.appendChild(tdEl);
-//
-//   cookieTable.appendChild(trEl);
-// };
 
 // create a for loop for an array for the time slots instead of whats below, make global array at top
 function headRow() {
@@ -84,7 +66,7 @@ function footRow() {
 
      for(var j = 0; j < cookStore.length; i++){
        hourlyTotal += cookStore.length[j].cookiesEachHour[i];
-       
+
      }
      thEl = document.createElement('th');
      thEl.textContent = hourlyTotal;
@@ -99,6 +81,32 @@ var seatacAirport = new patsCookies('Seatac Airport', 23, 65, 6.3);
 var seattleCenter = new patsCookies('Seattle center', 23, 65, 6.3);
 var capitolHill = new patsCookies('Capitol Hill', 23, 65, 6.3);
 var alkiBeach = new patsCookies('Alki Beach', 23, 65, 6.3);
+
+headRow();
+pikePlaceMarket.render();
+seatacAirport.render();
+seattleCenter.render();
+capitolHill.render();
+alkiBeach.render();
+
+//   var tdEl = document.createElement('td');
+//   tdEl.textContent = this.name;
+//   trEl.appendChild(tdEl);
+//
+//   tdEl = document.createElement('td');
+//   tdEl.textContent = this.min;
+//   trEl.appendChild(tdEl);
+//
+//   tdEl = document.createElement('td');
+//   tdEl.textContent = this.max;
+//   trEl.appendChild(tdEl);
+//
+//   tdEl = document.createElement('td');
+//   tdEl.textContent = this.avg;
+//   trEl.appendChild(tdEl);
+//
+//   cookieTable.appendChild(trEl);
+// };
 
 // pikePlaceMarket.render();
 // seatacAirport.render();
@@ -280,10 +288,3 @@ var alkiBeach = new patsCookies('Alki Beach', 23, 65, 6.3);
 //     ulEl.appendChild(liEl);
 //   }
 // }
-
-headRow();
-pikePlaceMarket.render();
-seatacAirport.render();
-seattleCenter.render();
-capitolHill.render();
-alkiBeach.render();
