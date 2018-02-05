@@ -1,11 +1,25 @@
 * {
   font-family: 'Faster One', cursive;
 }
-
-h1 {
-  color: blue;
+body {
+  width:950px;
+  margin: 20px auto;
+  background-color: #001433;
 }
 
-table {
-  border: 2px;
+header {
+  background-color: #A5ACAF;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
 }
